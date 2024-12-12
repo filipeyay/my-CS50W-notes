@@ -40,7 +40,7 @@ When you are satisfied with the changes in each branch you can `merge` them.
 
 To know what branch you are working you can type `git branch`. To create a new branch you can type `git checkout -b <new-branch>` and to switch to another branch you can type `git checkout <branch-name>`.
 
-And finnaly to merge just type `git merge <branch-name`. Sometimes git will say there's a conflict, don't freak out, just fix and commit the fix.
+And finnaly to merge just type `git merge <branch-name>`. Sometimes git will say there's a conflict, don't freak out, just fix and commit the fix.
 
 ## Fork
 
