@@ -1,0 +1,17 @@
+/* 
+ Here it basically says that if there is not enough space on the screen, it adapts the content so that it fits on the screen and remains coherent.
+*/
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*----------------*/
+#container > div {
+  background-color: green;
+  font-size: 20px;
+  margin: 20px;
+  padding: 20px;
+  width: 200px;
+}

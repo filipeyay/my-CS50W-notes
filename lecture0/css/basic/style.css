@@ -1,0 +1,63 @@
+/* 
+ I can select HTML elements with - inline, id, class, type
+ (Ordered from most specific to least)
+ inline = specify the css code directly in the tag, in the html file
+ id = unique name for a tag that cannot be repeated for another tag
+ class = unique name that can be repeated for other tags
+ type = will select all the same tags
+ */
+
+#hello {
+  background-color: #222;
+  color: #fff;
+  width: 300px;
+  height: 200px;
+  padding: 20px; /* Space within the element's border */
+  margin: 20px; /* Space out of the element */
+  font-family: Verdana, sans-serif; /* Specifies the font to be used, the first font is the actual font chosen, and the second is a fallback in case the browser does not support the font. */
+  font-size: 70px;
+  font-weight: bold;
+}
+
+/* I can manipulate more than one element at the same time with: */
+th,
+td {
+  border: 1px #222 solid; /* Create borders on my element */
+  padding: 8px;
+}
+
+table {
+  border: 1px #222 solid;
+  border-collapse: collapse; /* Join the edges, making it more similar to the table pattern */
+}
+
+/* Using the children method to access an item within another */
+ol > ul {
+  color: orange;
+}
+
+/* another way to access a element */
+a[href="https://google.com"]
+{
+  color: red;
+}
+a[href="https://amazon.com"]
+{
+  color: springgreen;
+}
+
+button {
+  width: 80px;
+  height: 30px;
+  background-color: green;
+  color: black;
+  border-radius: 20px; /* Used to round the element's tales */
+  border: none;
+}
+
+/* When the user hovers the mouse over */
+button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer; /* Specify how the cursor behaves when hovering over */
+}
