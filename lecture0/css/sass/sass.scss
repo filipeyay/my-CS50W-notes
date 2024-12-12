@@ -1,0 +1,51 @@
+/* It is also possible to use a command to
+have sass automatically compile whenever
+there is a change with:
+`sass --watch sass sass.scss:sass.css` */
+
+/* With sass is possible to create variables */
+$color: #2cf;
+
+ul {
+  font-size: 20px;
+  color: $cor;
+}
+
+ol {
+  font-size: 40px;
+  color: $cor;
+}
+
+/* It also provides better syntax */
+div {
+  p {
+    color: green;
+  }
+
+  h1 {
+    color: yellow;
+  }
+}
+
+/* Finally a look at the method that extends a pattern for a class */
+%message {
+  font-family: monospace;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px black solid;
+  padding: 20px;
+  margin: 20px;
+}
+
+.sucesso {
+  @extend %message;
+  background-color: green;
+}
+.aviso {
+  @extend %message;
+  background-color: orange;
+}
+.erro {
+  @extend %message;
+  background-color: red;
+}
