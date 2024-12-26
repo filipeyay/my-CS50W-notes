@@ -1,0 +1,12 @@
+/* Since it's not commum to a CSS change, we can presume that it's a static file */
+
+body {
+  background-color: #222;
+  color: #fff;
+}
+h1 {
+  font-family: Verdana, sans-serif;
+  font-size: 80px;
+  text-align: center;
+  margin-top: 300px;
+}

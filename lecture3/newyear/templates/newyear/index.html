@@ -1,0 +1,24 @@
+<!-- We can load a static file with: -->
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Here we can include a CSS file, and with Django the best way of doing that is: -->
+
+    <link rel="stylesheet" href="{% static 'newyear/styles.css' %}" />
+    <title>Is it new year?</title>
+  </head>
+  <body>
+    <!-- It's possible to add Python logic with curly braces and porcentages -->
+    {% if newyear %}
+    <h1>YES</h1>
+    {% else %}
+    <h1>NO</h1>
+
+    <!-- When working with Python logic on a HTML file and Django, it's necessary to end the logic with 'endif' -->
+    {% endif %}
+  </body>
+</html>
