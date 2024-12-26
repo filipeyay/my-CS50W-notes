@@ -1,0 +1,13 @@
+{%extends "tasks/layout.html" %}
+
+{%block body%}
+<form action="{%url "add"%}" method="post">
+    <!-- a necessary security measure to avoid error 403 -->
+    {% csrf_token %}
+  <h1>Add Tasks</h1>
+  <!-- run 'form' class -->
+  {{ form }}
+  <input type="submit" />
+</form>
+<a href="{%url "index"%}">See Tasks</a>
+{% endblock %}

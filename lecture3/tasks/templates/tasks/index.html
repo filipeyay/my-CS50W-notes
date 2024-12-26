@@ -1,0 +1,17 @@
+<!-- Now the only thing that will actually be included is the page's differential since it uses the layout.html/ file as default. Here we can insert a loop like this: -->
+
+{% extends "tasks/layout.html" %} {%block body%}
+
+<h1>Tasks</h1>
+<ul>
+    {%for tasks in tasks%}
+    <li>{{tasks}}</li>
+    <!-- if the "for loop" is run but there is no item then the "empty" method is executed showing a default message -->
+     {%empty%}
+     <li>No tasks</li>
+     {%endfor%}
+</ul>
+
+<!-- It's possible to link the page in Django this way: using the given name on the urls.py file -->
+<a href="{%url "add"%}">Add</a>
+{%endblock%}
